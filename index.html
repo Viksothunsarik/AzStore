@@ -16,7 +16,7 @@
                 <img src="/img/logoshop.png" width="140px" alt="">
             </div>
             <nav>
-                <ul>
+                <ul id="MenuItems">
                     <li><a href="">Home</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">About</a></li>
@@ -25,6 +25,7 @@
                 </ul>
             </nav>
             <img src="/img/cart.png" width="30px" height="30px" alt="">
+            <img src="/img/menu.png" class="menu-icon" onclick="menutoggle()">
     </div>
     <div class="row">
         <div class="col-2">
@@ -229,11 +230,149 @@
                     <small>The Mi Smart Band 4 features a 39.9% larger
                     (than Mi Band 3)AMOLED color full-touch display with 
                     adjustable brightness, so everything is clear as can 
-                    be.</small>
+                    be.</small><br>
+                    <a href="" class="btn">Order Now &#8594; </a>
                 </div>
             </div>
             </div>
         </div>
     </div>
+
+
+<!-------- testimonial -------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        *มาพร้อมกับสายรัด TPU สีดํา/ขาวตามมาตรฐาน ส่วนสายรัดสีอื่น ๆ
+                        จะต้องซื้อแยกต่างหาก ตัวเลือกสีอาจแตกต่างกันออกไปตามพื้นที่
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <img src="img/user-1.png" alt="">
+                    <h3>Sok Pisey</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        *มาพร้อมกับสายรัด TPU สีดํา/ขาวตามมาตรฐาน ส่วนสายรัดสีอื่น ๆ
+                        จะต้องซื้อแยกต่างหาก ตัวเลือกสีอาจแตกต่างกันออกไปตามพื้นที่
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <img src="img/user-2.png" alt="">
+                    <h3>Ah chhem</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        *มาพร้อมกับสายรัด TPU สีดํา/ขาวตามมาตรฐาน ส่วนสายรัดสีอื่น ๆ
+                        จะต้องซื้อแยกต่างหาก ตัวเลือกสีอาจแตกต่างกันออกไปตามพื้นที่
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <img src="img/user-3.png" alt="">
+                    <h3>Wat Soannita</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------- brands -------->
+    <div class="brands">
+        <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="img/logo-godrej.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="img/logo-oppo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="img/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="img/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="img/logo-philips.png" alt="">
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-------- footer-------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="img/app-store.png" alt="">
+                        <img src="img/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logoshop.png" width="300px" height="200px" alt="">
+                    <p>Our Purpose is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>FaceBook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright January 2024 - AzStore</p>
+        </div>
+    </div>
+<!---------js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = " 0px ";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
 </body>
 </html>
